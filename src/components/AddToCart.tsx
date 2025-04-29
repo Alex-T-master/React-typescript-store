@@ -20,7 +20,7 @@ const AddToCart: React.FC<{ singleProduct: productDataType | {} }> = ({
     if (amount > 1) {
       setAmount(amount - 1)
     }
-  }
+  }    
 
   return (
     <Wrapper>

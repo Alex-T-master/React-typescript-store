@@ -18,7 +18,7 @@ exports.handler = async function (event, context) {
       }, 0)
     }
 
-    try {
+    try {   
       const paymentIntent = await stripe.paymentIntents.create({
         amount: calculateTotal(cart) * 100,
         currency: 'thb',
